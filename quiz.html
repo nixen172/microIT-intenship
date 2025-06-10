@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>🚀Interactive Web</h1>
+    <p>Built with 💖 using HTML, CSS, JS</p>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="card glass" id="quizCard">
+    <h2>🧠 Quick Quiz</h2>
+    <div id="quiz">
+      <p id="question">Loading...</p>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- Joke API -->
+  <section class="card glass" id="jokeCard">
+    <h2>😂 Laugh Break</h2>
+    <p id="jokeText">Click below for a random joke!</p>
+    <button onclick="getJoke()">Tell Me a Joke 🤣</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Nixen | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

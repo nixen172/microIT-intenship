@@ -1,0 +1,97 @@
+/* Font + Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  color: #dcdcdc;
+  font-size: 1.1rem;
+}
+
+/* Card Design */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  margin: 1rem auto;
+  animation: fadeIn 1s ease;
+}
+.card h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.card p, #question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+button {
+  padding: 0.75rem 1.2rem;
+  background: #00c9a7;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: #007b72;
+}
+
+/* Quiz Options */
+#options button {
+  display: block;
+  width: 100%;
+  margin: 0.4rem 0;
+  background: #333;
+  border: 1px solid #666;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
